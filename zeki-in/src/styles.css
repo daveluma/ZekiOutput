@@ -1,0 +1,150 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  justify-content: center;
+  color: #fff;
+}
+
+#root {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.simple-trans-main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 5em;
+  will-change: transform, opacity;
+}
+
+:root {
+  --backgroundColor: rgb(255, 255, 255);
+  --colorShadeA: #ffffff;
+  --colorShadeB: #f6891f;
+  --colorShadeC: #eb5ea2;
+  --colorShadeD: #1baa4b;
+  --colorShadeE: #29ade3;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--backgroundColor);
+  -webkit-text-stroke: 2px black;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  background: #eee;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+body {
+  background: #eeff00;
+}
+a {
+  /*placement for code pen*/
+  margin: 10% 40%;
+  /*Button Text Style*/
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: inherit;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*Button Color & Border*/
+  border: 3px solid #000000;
+  color: #000000;
+  background: #fff;
+  outline: none;
+  /*Position, Display, Size*/
+  position: absolute;
+  display: inline-block;
+  padding: 15px 10px 14px;
+  cursor: pointer;
+  width: auto;
+  bottom: 6%;
+}
+a:after {
+  /*Make a:after be as big as button*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*Give a:after Border & Background color*/
+  border: 2px solid #000000;
+  background-color: #000000;
+  /*Decide Location of a:after..this gives a           bottom right shadow*/
+  bottom: 9%;
+  /*Place a:after behind button*/
+  z-index: -1;
+  content: "";
+  /*Animation/Transition Speed*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+a:hover {
+  bottom: 8%;
+}
+a:hover:after {
+  bottom: 10%;
+}

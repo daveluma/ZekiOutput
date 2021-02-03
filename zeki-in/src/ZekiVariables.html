@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+
+.myButton {
+	box-shadow: 0px 0px 0px 2px #b00a81;
+	background:linear-gradient(to bottom, #e95fa2 5%, #e95fa2 100%);
+	background-color:#e95fa2;
+	border-radius:8px;
+	border:1px solid #7d006e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Fredoka One', cursive;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e95fa2;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e95fa2 5%, #e95fa2 100%);
+	background-color:#e95fa2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+	body {
+  background-color: #FFF8DC;
+	}
+	h1   {color: blue;}
+.p2    {color: white;}
+p {font-family: 'Fredoka One', cursive;}
+.image { 
+   position: relative; 
+   width: 100%; 
+}
+.bottom-right {
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  color: white;
+}
+.wrap{
+    max-width: 10em; max-width: 10ch;
+}
+
+.bevel{
+	border-radius:11px;
+}
+
+.zekiBlue{
+  color:#27ADE3;
+}
+.zekiOrange{
+  color:#F68920;
+}
+.zekiPink{
+  color:#E95FA2;
+}
+.zekiGreen{
+  color:#1AAA4B;
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+</style>
+<body>
+<div>
+	<a href="https://www.zekilearning.org/"><img src="zeki.png" alt="background" width="auto"height="auto"/></a>
+<p class="zekiBlue">noun =&nbsp;<input name="noun" type="text" maxlength="512" id="noun" class="searchField" class="p2"/></p>
+<p class="zekiOrange">verb =&nbsp;&nbsp;<input name="verb" type="text" maxlength="512" id="verb" class="searchField"/></p>
+<p class="zekiPink">adj =&nbsp;&nbsp;&nbsp;&nbsp;<input name="adj" type="text" maxlength="512" id="adj" class="searchField"/></p>
+<p class="zekiGreen">year =&nbsp;&nbsp;<input name="year" type="text" maxlength="512" id="year" class="searchField"/></p>
+<p>choice =
+    <input type="radio" name="choice" value="True"> True
+    <input type="radio" name="choice" value="False"> False
+    <p>
+<br>
+</div>
+<div class="imageContainer">
+<p><br>if (choice == True):<br></p><p style="margin-left:2.5em">result = "My " + <u>str(noun)</u> + " and I heard some " + <u>str(adj</u> + " music. I have not heard this since " + <u>str(year)</u> + ". My friend and I began to " + <u>str(verb)</u> + " to the melody."<br></p><p>if (choice == False):<br><p style="margin-left:2.5em">result = "My " + <u>str(noun)</u> + " and I saw some " + <u>str(adj)</u> + " dancers. I have not seen anyone move like that since " + <u>str(year)</u> + ". My friend and I " + <u>str(verb)</u> + " some music as the dancers bopped."<br></p><p>print(result)</p><br>
+</div >
+<input class="myButton" class="bevel"type="button" id="btn" value="Try Me!">
+<br><br><br>
+<div class="image" class="p2">
+	<p class="bottom-right" class="wrap" id="replace-me">Output</p>
+      <img src="black.png" class="bevel" alt="background" width="1500"height="120"/>
+	
+
+</div>
+
+		<script>
+			var someVar = "some";
+			
+			const btn = document.querySelector('#btn');
+	        btn.onclick = function () {
+	        	
+        		var noun = document.getElementById("noun").value;
+        		var verb = document.getElementById("verb").value;
+        		var adj = document.getElementById("adj").value;
+        		var year = document.getElementById("year").value;
+        		var result = "";
+
+            	const rbs = document.querySelectorAll('input[name="choice"]');
+	        				
+            	let selectedValue;
+            	for (const rb of rbs) {
+                	if (rb.checked) {
+                    	selectedValue = rb.value;
+                    break;
+                	} else{
+                    selectedValue = "none";
+                  }
+            	}
+          
+            	
+              if (noun == "" || verb == "" || adj =="" || year == "" || selectedValue == "none")
+              {
+                alert("Fill in the spaces");
+                result ="^^^FIll in the fields^^^";
+              }
+            	else if (selectedValue == "True")
+            	{
+            		result = "*" + noun + "* and I heard some *" + adj + "* music. I have not heard this since *" + year + "*. My friend and I began to *" + verb + "* to the melody."
+
+            	}
+            	else if (selectedValue == "False")
+            	{
+            		result = "*" + noun + "* and I saw some *" + adj + "* dancers. I have not seen anyone move like that since *" + year + "*. My " + noun + " and I *" + verb + "* to the music as the dancers bopped."
+            	}
+
+            	document.getElementById('replace-me').innerText = result;
+             
+        };
+
+	</script>
+</body>
+</html>
