@@ -28,6 +28,7 @@ let slides = new Map([
   [4,  "toys"]
 ]);
 
+//have counter start on variables
 var ind = 0;
 
 export default function App() {
