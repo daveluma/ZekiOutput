@@ -1,9 +1,11 @@
 import React from "react";
+import '../variables.css';
 
 const NotFoundPage = () => {
+    
     return (
-        <div>
-            <h2>404 Not Found!</h2>
+        <div className="four">
+            <h1>404 Not Found!</h1>
         </div>
     )
 }

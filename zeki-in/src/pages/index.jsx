@@ -1,7 +1,6 @@
 import { render } from 'react-dom'
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 import '../styles.css'
 
@@ -50,7 +49,7 @@ const pages = [
             ind = item
             return <Page key={key} style={props} />
           })}
-         <a onClick={routeChange}>Enter</a>
+         <b className="b1" onClick={routeChange}>Enter</b>
         </div>
       )
 }
