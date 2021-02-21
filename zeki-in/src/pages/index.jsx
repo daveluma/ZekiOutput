@@ -49,7 +49,7 @@ const pages = [
             ind = item
             return <Page key={key} style={props} />
           })}
-         <b className="b1" onClick={routeChange}>Enter</b>
+         <a className="mb" onClick={routeChange}>Enter</a>
         </div>
       )
 }

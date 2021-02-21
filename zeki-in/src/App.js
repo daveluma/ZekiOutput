@@ -5,7 +5,7 @@ import './styles.css'
 //Pages
 import MainPage from "./pages";
 import NotFoundPage from "./pages/404";
-import UsersPage from "./pages/variables";
+import VariablePage from "./pages/variables";
 import ConditionalPage from "./pages/conditionals";
 import LoopPage from "./pages/loops";
 import FirstProgPage from "./pages/firstProg"
@@ -17,7 +17,7 @@ export default function App() {
     <Switch>
     <Route exact path="/" component={MainPage}/>
     <Route exact path="/404" component={NotFoundPage}/>
-    <Route exact path="/variables" component={UsersPage}/>
+    <Route exact path="/variables" component={VariablePage}/>
     <Route exact path="/loops" component={LoopPage}/>
     <Route exact path="/conditionals" component={ConditionalPage}/>
     <Route exact path="/first-program" component={FirstProgPage}/>

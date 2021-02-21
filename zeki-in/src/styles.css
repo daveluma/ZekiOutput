@@ -149,7 +149,7 @@ b:hover:after {
   bottom: 10%;
 }
 
-.b1 {
+.mb {
   /*placement for code pen*/
   margin: 10% 40%;
   /*Button Text Style*/
@@ -170,9 +170,9 @@ b:hover:after {
   padding: 15px 10px 14px;
   cursor: pointer;
   width: auto;
-  bottom: 6%;
+  bottom: 10%;
 }
-.b1:after {
+.mb:after {
   /*Make a:after be as big as button*/
   position: absolute;
   width: 100%;
@@ -190,11 +190,59 @@ b:hover:after {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
+.mb:hover {
+  bottom: 9%;
+}
+.mb:hover:after {
+  bottom: 10%;
+}
+
+.b1 {
+  /*placement for code pen*/
+  margin: 10% 40%;
+  /*Button Text Style*/
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: inherit;
+  text-align: center;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*Button Color & Border*/
+  border: 3px solid #000000;
+  color: #000000;
+  background: #fff;
+  outline: none;
+  /*Position, Display, Size*/
+  position: absolute;
+  display: inline-block;
+  padding: 15px 10px 14px;
+  cursor: pointer;
+  min-width: 1000px;
+  bottom: 40%;
+}
+.b1:after {
+  /*Make a:after be as big as button*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*Give a:after Border & Background color*/
+  border: 2px solid #000000;
+  background-color: #000000;
+  /*Decide Location of a:after..this gives a           bottom right shadow*/
+  bottom: 41%;
+  /*Place a:after behind button*/
+  z-index: -1;
+  content: "";
+  /*Animation/Transition Speed*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
 .b1:hover {
-  bottom: 8%;
+  bottom: 41%;
 }
 .b1:hover:after {
-  bottom: 10%;
+  bottom: 40%;
 }
 
 .b2 {
@@ -204,7 +252,7 @@ b:hover:after {
   font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
   font-size: inherit;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 20px;
   text-transform: uppercase;
   text-decoration: none;
   /*Button Color & Border*/
@@ -217,8 +265,8 @@ b:hover:after {
   display: inline-block;
   padding: 15px 10px 14px;
   cursor: pointer;
-  width: auto;
-  bottom: 18%;
+  min-width: 1000px;
+  bottom: 30%;
 }
 .b2:after {
   /*Make a:after be as big as button*/
@@ -228,8 +276,8 @@ b:hover:after {
   /*Give a:after Border & Background color*/
   border: 2px solid #000000;
   background-color: #000000;
-  /*Decide Location of a:after..this gives a           bottom right shadow*/
-  bottom: 20%;
+  /*Decide Location of a:after..this gives a bottom right shadow*/
+  bottom: 31%;
   /*Place a:after behind button*/
   z-index: -1;
   content: "";
@@ -239,10 +287,10 @@ b:hover:after {
   -o-transition: all 0.5s;
 }
 .b2:hover {
-  bottom: 20%;
+  bottom: 31%;
 }
 .b2:hover:after {
-  bottom: 18%;
+  bottom: 30%;
 }
 
 .b3 {
@@ -252,7 +300,7 @@ b:hover:after {
   font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
   font-size: inherit;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 20px;
   text-transform: uppercase;
   text-decoration: none;
   /*Button Color & Border*/
@@ -265,8 +313,8 @@ b:hover:after {
   display: inline-block;
   padding: 15px 10px 14px;
   cursor: pointer;
-  width: auto;
-  bottom: 28%;
+  min-width: 1000px;
+  bottom: 20%;
 }
 .b3:after {
   /*Make a:after be as big as button*/
@@ -277,7 +325,7 @@ b:hover:after {
   border: 2px solid #000000;
   background-color: #000000;
   /*Decide Location of a:after..this gives a           bottom right shadow*/
-  bottom: 30%;
+  bottom: 21%;
   /*Place a:after behind button*/
   z-index: -1;
   content: "";
@@ -287,8 +335,114 @@ b:hover:after {
   -o-transition: all 0.5s;
 }
 .b3:hover {
-  bottom: 30%;
+  bottom: 21%;
 }
 .b3:hover:after {
-  bottom: 28%;
+  bottom: 20%;
+}
+
+.b4 {
+  /*placement for code pen*/
+  margin: 10% 40%;
+  /*Button Text Style*/
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 15px;
+  text-decoration: none;
+  /*Button Color & Border*/
+  border: 3px solid #000000;
+  color: #000000;
+  background: #fff;
+  outline: none;
+  /*Position, Display, Size*/
+  position: absolute;
+  display: inline-block;
+  padding: 15px 10px 14px;
+  cursor: pointer;
+  min-width: 1000px;
+  bottom: 4%;
+}
+.b4:after {
+  /*Make a:after be as big as button*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*Give a:after Border & Background color*/
+  border: 1px solid #000000;
+  background-color: #000000;
+  /*Decide Location of a:after..this gives a           bottom right shadow*/
+  bottom: 5%;
+  /*Place a:after behind button*/
+  z-index: -1;
+  content: "";
+  /*Animation/Transition Speed*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.b4:hover {
+  bottom: 5%;
+}
+.b4:hover:after {
+  bottom: 4%;
+}
+
+.back {
+  /*placement for code pen*/
+  margin: 1% 1% 1% 1%;
+  /*Button Text Style*/
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 15px;
+  text-decoration: none;
+  /*Button Color & Border*/
+  border: 3px solid #000000;
+  color: #000000;
+  background: #fff;
+  outline: none;
+  /*Position, Display, Size*/
+  position: absolute;
+  display: inline-block;
+  padding-left: 0.9%;
+  cursor: pointer;
+  min-width: auto;
+  bottom: 84%;
+  right: 85%;
+}
+.back:after {
+  /*Make a:after be as big as button*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*Give a:after Border & Background color*/
+  border: 1px solid #000000;
+  background-color: #000000;
+  /*Decide Location of a:after..this gives a           bottom right shadow*/
+  bottom: 85%;
+  right: 85%;
+  /*Place a:after behind button*/
+  z-index: -1;
+  content: "";
+  /*Animation/Transition Speed*/
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.back:hover {
+  bottom: 85%;
+  right: 85%;
+}
+.back:hover:after {
+  bottom: 84%;
+  right: 85%;
+}
+
+.concept-font {
+  font-family: "Inconsolata", "Helvetica", "Arial", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  height: 100%;
+  position: absolute;
 }
